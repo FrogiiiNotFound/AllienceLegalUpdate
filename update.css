@@ -1,0 +1,149 @@
+.button-1 {
+    background-color: #010101;
+}
+
+.button-2 {
+    color: #010101;
+    background-color: white;
+}
+
+.button-2:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.button-1:hover {
+    background-color: #464646;
+}
+
+.div-block {
+    background-color: rgb(167, 167, 167);
+}
+
+.image {
+    border-bottom: 4px solid #010101;
+}
+
+.block-adv {
+    border-bottom: 2px solid #010101;
+}
+
+.wbs-accordion-3-icon-plus {
+    background-color: #010101;
+}
+
+.wbs-accordion-3-icon-minus {
+    background-color: #010101;
+}
+
+.link:hover {
+    color: rgb(192, 192, 192);
+}
+
+.wbs-nav-link:hover,
+.wbs-nav-link.w--current {
+    color: rgb(192, 192, 192);
+}
+
+.telegram-icon {
+    position: fixed;
+    /* Фиксированное положение относительно окна браузера */
+    bottom: 100px;
+    /* Отступ от нижнего края */
+    right: 20px;
+    /* Отступ от левого края */
+    z-index: 1000;
+    /* Гарантирует, что значок будет поверх других элементов */
+    display: block;
+    /* Убедитесь, что ссылка отображается */
+    width: 70px;
+    /* Ширина значка */
+    height: 70px;
+    /* Высота значка */
+    border-radius: 50px;
+}
+
+.telegram-icon img {
+    border-radius: 50px;
+    width: 100%;
+    /* Растягивает изображение на всю ширину контейнера */
+    height: 100%;
+    /* Растягивает изображение на всю высоту контейнера */
+    object-fit: contain;
+    /* Сохраняет пропорции изображения, не обрезая его */
+}
+
+/* Дополнительные стили (по желанию) */
+.telegram-icon:hover {
+    opacity: 0.8;
+    /* Небольшое изменение прозрачности при наведении */
+}
+
+.telegram-text {
+    margin-left: -10px;
+    width: 120px;
+
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.wbs-accordion-3-content {
+    display: none;
+    /* Скрываем содержимое по умолчанию */
+    overflow: hidden;
+    /* Предотвращает возможные проблемы с отображением контента во время анимации */
+}
+
+.wbs-accordion-3-heading {
+    cursor: pointer;
+    /* Меняем курсор при наведении, чтобы показать, что элемент кликабельный */
+    padding: 10px;
+    background-color: #f6f7f8;
+    border-bottom: 1px solid #f6f7f8;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.wbs-accordion-3-heading:hover {
+    background-color: #f6f7f8;
+}
+
+.wbs-accordion-3-heading.active {
+    background-color: #f6f7f8;
+}
+
+.wbs-accordion-3-content.active {
+    display: block;
+    /* Показываем содержимое при активации */
+}
+
+@media (max-width: 583px) {
+    .wbs-accordion-3-heading {
+        min-width: inherit;
+        max-width: inherit;
+    }
+}
+
+.wbs-accordion-3-content {
+    height: 0;
+    /* Начальная высота 0 */
+    overflow: hidden;
+    transition: height 0.3s ease;
+    /* Плавная анимация высоты */
+}
+
+.wbs-accordion-3-heading {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.wbs-accordion-3-content.active {
+    height: auto;
+    /* Автоматическая высота при открытии */
+}
+
+.dot {
+    background-color: #010101;
+}
