@@ -20,7 +20,7 @@
 }
 
 .image {
-    border-bottom: 4px solid #010101;
+    border-bottom: 4px solid white;
 }
 
 .block-adv {
@@ -60,6 +60,11 @@
     height: 70px;
     /* Высота значка */
     border-radius: 50px;
+}
+
+.whatsapp-icon {
+    border-radius: 50%;
+    bottom: 180px;
 }
 
 .telegram-icon img {
@@ -148,7 +153,175 @@
     background-color: #010101;
 }
 
-.brand img{
+.brand img {
     width: 100px;
     height: 100px;
+}
+
+.caps-back {
+    background-color: white;
+}
+
+.about-us__title {
+    font-family: Montserrat, sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 120%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.wrapper-about {
+    margin: 0px auto;
+}
+
+.about-us__text {
+    font-size: 30px;
+    color: #0099CC;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about-us__companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-us__company {
+    min-height: 270px;
+    padding: 100px 20px;
+    border: 1px solid #00536e;
+    transition: all 0.3s linear;
+}
+
+.about-us__company:hover {
+    border: 1px solid #00678a;
+    transform: scale(1.1);
+}
+
+.about-us__company img {
+    width: 200px;
+}
+
+.company-2 {
+    padding: 120px 20px;
+}
+
+.about-us__link-text {
+    cursor: pointer;
+    max-width: 170px;
+    text-align: center;
+    border-bottom: 1px solid #2f3f44;
+    color: #000000;
+    font-size: 20px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.about-us__image {
+    margin: 0px auto;
+    width: 80%;
+}
+
+@media (max-width: 680px) {
+    .about-us__company img {
+        width: 100px;
+    }
+
+    .about-us__company {
+        padding: 80px 20px 20px 20px;
+        min-height: 200px !important;
+    }
+
+    .company-2 {
+        padding: 87px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 545px) {
+    .about-us__companies {
+        flex-direction: column;
+    }
+
+    .about-us__company img {
+        width: 200px;
+    }
+
+    .about-us__company {
+        padding: 80px 100px !important;
+        min-height: 100px !important;
+    }
+}
+
+@media (max-width: 419px) {
+    .about-us__company {
+        padding: 50px 70px !important;
+    }
+
+    .about-us__company img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 372px) {}
+
+.swiper-pagination {
+    position: relative;
+}
+
+.testimonials {
+    margin: 0px 15px;
+}
+
+.testimonials-slider__slide {
+    user-select: none;
+    padding: 40px;
+    background: #0099CC;
+    height: 750px;
+}
+
+.testimonials__slider-icon {
+    text-align: center;
+    margin: 0px auto;
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.testimonials__slider-image {
+    text-align: center;
+    margin: 0px auto 60px 0px;
+}
+
+.testimonials__slider-image img {
+    width: 200px;
+}
+
+.testimonials__slider-text {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.testimon {
+    margin-bottom: 40px;
+}
+
+.testimonials__slider-author {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.testimonials__slider-proffesion {
+    font-size: 20px;
+    color: white;
+}
+
+.testimonials-slider__wrapper {
+    margin-bottom: 40px;
 }
